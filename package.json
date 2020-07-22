@@ -1,0 +1,52 @@
+{
+  "name": "hcrun",
+  "version": "1.0.0",
+  "description": "Google HashCode Runner",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "node server.js",
+    "rm-optimal-solution": "rm -rf public/Solution* && rm -f ./optimalSolution.json",
+    "pretty": "npx prettier --write \"*.{js,json}\""
+  },
+  "config": {
+    "hcrun": {
+      "scorerPath": "./bin/score2"
+    },
+    "server": {
+      "host": "hc.gcp.jevan.cc",
+      "port": "8833",
+      "writeSolutionInterval": 20000
+    },
+    "infileMap": {
+      "a": "./data/a_example.txt",
+      "b": "./data/b_read_on.txt",
+      "c": "./data/c_incunabula.txt",
+      "d": "./data/d_tough_choices.txt",
+      "e": "./data/e_so_many_books.txt",
+      "f": "./data/f_libraries_of_the_world.txt"
+    }
+  },
+  "author": "jevancc",
+  "license": "ISC",
+  "dependencies": {
+    "await-sleep": "0.0.1",
+    "chalk": "^3.0.0",
+    "consola": "^2.11.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "shelljs": "^0.8.3",
+    "superagent": "^5.2.1",
+    "tempy": "^0.4.0",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.4.14",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "prettier": "2.0.5"
+  }
+}
