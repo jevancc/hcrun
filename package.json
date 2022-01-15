@@ -36,7 +36,7 @@
     "consola": "^2.11.3",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "superagent": "^5.2.1",
     "tempy": "^0.4.0",
     "yargs": "^15.1.0"
